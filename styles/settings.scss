@@ -1,0 +1,96 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700;800&display=swap');
+// font-family: 'Epilogue', sans-serif;
+
+@font-face{
+  font-family: 'BigNoodleTitling';
+  src: url('../fonts/big_noodle_titling.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Colors
+$yellow: #FED018;
+$green: #037961;
+$greenDark: #14532D;
+$red: #CE1127;
+$gray: #A1A1AA;
+$black: #27272A;
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: 'BigNoodleTitling', sans-serif;
+  color: $black;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+p{
+  font-family: 'Epilogue', sans-serif;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#loader{
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.5s ease-in-out;
+  h2{
+    color: $green;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-family: 'Epilogue', sans-serif;
+  }
+  &.loaded{
+    opacity: 0;
+    transform: translate(0, -100%);
+    z-index: -10;
+  }
+}
+
+.author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-top: 1px solid $gray;
+  p{
+    text-align: center;
+    a:hover{
+      color: $green;
+    }
+  }
+}
