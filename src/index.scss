@@ -1,0 +1,66 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// font-family: 'Inter', sans-serif;
+
+@font-face{
+  font-family: 'BigNoodleTitling';
+  src: url('../fonts/big_noodle_titling.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Colors
+$white: #FFFFFF;
+$gray: #4B5563;
+$black: #000000;
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: 'BigNoodleTitling', sans-serif;
+  color: $black;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+p{
+  font-family: 'Epilogue', sans-serif;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.author{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-top: 1px solid $gray;
+  p{
+    text-align: center;
+    a:hover{
+      color: $white;
+    }
+  }
+}
