@@ -1,7 +1,15 @@
-import React from 'react'
+import React from "react";
 
 export default function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <div>
+      <div class="author">
+        <p>
+          Designé par
+          <a href="https://twitter.com/mbagnajohan"> Mbagna Johan </a> et codé par
+          <a href="https://lndev.me"> Leonel Ngoya </a>
+        </p>
+      </div> 
+    </div>
+  );
 }
