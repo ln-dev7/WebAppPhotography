@@ -3,11 +3,29 @@
 // font-family: 'Inter', sans-serif;
 
 @font-face{
-  font-family: 'BigNoodleTitling';
-  src: url('../fonts/big_noodle_titling.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'GraphikRegular';
+  src: url('/fonts/GraphikRegular.woff2') format('woff2');
 }
+
+@font-face{
+  font-family: 'GraphikMedium';
+  src: url('/fonts/GraphikMedium.woff2') format('woff2');
+}
+
+@font-face{
+  font-family: 'GraphikLight';
+  src: url('/fonts/GraphikLight.woff2') format('woff2');
+}
+
+@font-face{
+  font-family: 'GraphikExtralight';
+  src: url('/fonts/GraphikExtralight.woff2') format('woff2');
+}
+
+$ff-regular: 'GraphikRegular', sans-serif;
+$ff-medium: 'GraphikMedium', sans-serif;
+$ff-light: 'GraphikLight', sans-serif;
+$ff-extralight: 'GraphikExtralight', sans-serif;
 
 // Colors
 $white: #FFFFFF;
@@ -18,7 +36,7 @@ $black: #000000;
 ::before,
 ::after {
   box-sizing: border-box;
-  font-family: 'BigNoodleTitling', sans-serif;
+  font-family: $ff-regular;
   color: $black;
   font-weight: 300;
   margin: 0;
