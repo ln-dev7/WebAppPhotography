@@ -407,7 +407,7 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          transition: .3s ease;
+          transition: 0.3s ease;
 
           &:hover {
             transform: scale(1.1);
@@ -430,25 +430,27 @@
   .articles {
     display: flex;
     justify-content: center;
-    align-items: center;
-    .xl {
-      position: relative;
-      width: 100%;
-      max-width: 1280px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 1rem;
-      padding: 2.5rem 1rem;
-    }
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2.5rem 1rem;
+    gap: 2rem;
 
     &-header {
+      width: 100%;
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 0.5rem;
+      justify-content: center;
+      align-items: center;
+      .xl {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        width: 100%;
+        max-width: 1280px;
+        display: flex;
+        gap: 0.5rem;
+      }
       h2 {
         font-size: 1.7rem;
         font-family: $ff-medium;
@@ -472,6 +474,61 @@
           display: inline-block;
           color: $white;
         }
+      }
+    }
+    &-cards {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      overflow-x: scroll;
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 0.5rem;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+        flex-shrink: 0;
+        button {
+          border-radius: 8px;
+          padding: 6px;
+          border: 1px solid $white;
+          background: $white;
+          color: $black;
+          margin-left: 10px;
+          transition: 0.3s ease;
+          z-index: 2;
+        }
+        h3 {
+          color: $white;
+          font-family: $ff-medium;
+          margin: 0 10px 10px 10px;
+          z-index: 2;
+        }
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transition: 0.3s ease;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        &:nth-child(odd) {
+          width: 280px;
+          height: 200px;
+        }
+        &:nth-child(even) {
+          width: 280px;
+          height: 135px;
+        }
+      }
+      &::-webkit-scrollbar {
+        display: none;
       }
     }
   }

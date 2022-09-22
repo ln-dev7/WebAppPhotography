@@ -110,8 +110,8 @@ function Home() {
         </div>
       </div>
       <div className="articles">
-        <div className="xl">
-          <div className="articles-header">
+        <div className="articles-header">
+          <div className="xl">
             <h2>
               Une bonne dose d’inspiration toutes les semaines, juste pour vous
             </h2>
@@ -120,6 +120,37 @@ function Home() {
               <span>Voir tout les articles</span>
               <img src="/assets/images/arrow-right.svg" alt="arrow" />
             </button>
+          </div>
+        </div>
+        <div className="articles-cards">
+          <div>
+            <img src="/assets/images/17.png" alt="photo" />
+            <button>07 fevrier 2022</button>
+            <h3>Historique, le Sénégal remporte sa toute première CAN.</h3>
+          </div>
+          <div>
+            <img src="/assets/images/18.png" alt="photo" />
+          </div>
+          <div>
+            <img src="/assets/images/19.png" alt="photo" />
+          </div>
+          <div>
+            <img src="/assets/images/20.png" alt="photo" />
+          </div>
+          <div>
+            <img src="/assets/images/21.png" alt="photo" />
+          </div>
+          <div>
+            <img src="/assets/images/18.png" alt="photo" />
+          </div>
+          <div>
+            <img src="/assets/images/19.png" alt="photo" />
+          </div>
+          <div>
+            <img src="/assets/images/20.png" alt="photo" />
+          </div>
+          <div>
+            <img src="/assets/images/21.png" alt="photo" />
           </div>
         </div>
       </div>
