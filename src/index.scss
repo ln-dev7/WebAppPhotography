@@ -4,22 +4,22 @@
 
 @font-face {
   font-family: "GraphikRegular";
-  src: url("./assets/fonts/GraphikRegular.woff2") format("woff2");
+  src: url("/assets/fonts/GraphikRegular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "GraphikMedium";
-  src: url("./assets/fonts/GraphikMedium.woff2") format("woff2");
+  src: url("/assets/fonts/GraphikMedium.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "GraphikLight";
-  src: url("./assets/fonts/GraphikLight.woff2") format("woff2");
+  src: url("/assets/fonts/GraphikLight.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "GraphikExtralight";
-  src: url("./assets/fonts/GraphikExtralight.woff2") format("woff2");
+  src: url("/assets/fonts/GraphikExtralight.woff2") format("woff2");
 }
 
 $ff-regular: "GraphikRegular", sans-serif;
