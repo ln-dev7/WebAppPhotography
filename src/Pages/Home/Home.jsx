@@ -8,7 +8,7 @@ function Home() {
         <div class="xl">
           <div class="hero-text">
             <h1>
-              Trouvez l’image haute résolution parfaite pour <br /> enrichir
+              Trouvez l’image haute résolution parfaite pour enrichir
               votre prochain projet créatif.
             </h1>
             <div>
