@@ -83,6 +83,32 @@ function Home() {
           </Link>
         </div>
       </div>
+      <div className="trends">
+        <div className="xl">
+          <div className="trends-header">
+            <h2>Découvrez les tendances de 2022</h2>
+            <p>
+              Explorez les catégories de photos libres de droits les plus
+              populaires.
+            </p>
+            <button>Tout consulter</button>
+          </div>
+          <div className="trends-cards">
+            <div>
+              <img src="/assets/images/14.png" alt="photo" />
+              <h3>Evènement Otaku</h3>
+            </div>
+            <div>
+              <img src="/assets/images/15.png" alt="photo" />
+              <h3>Concert</h3>
+            </div>
+            <div>
+              <img src="/assets/images/16.png" alt="photo" />
+              <h3>Animaux</h3>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="articles">
         <div className="xl">
           <div className="articles-header">
