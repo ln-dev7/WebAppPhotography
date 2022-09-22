@@ -1,4 +1,5 @@
 import React from "react";
+import "./header.scss"
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -34,6 +35,7 @@ export default function Header() {
       <nav className="nav">
         <img src="assets/logo-white.svg" alt="logo" />
         <h4>
+          <img src="assets/world-white.svg" alt="world" />
           <span>Français</span>
         </h4>
         <button type="button">Devenir créateur</button>
