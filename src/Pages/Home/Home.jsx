@@ -64,8 +64,6 @@ function Home() {
               <img src="/assets/images/3.png" alt="photo" />
               <img src="/assets/images/4.png" alt="photo" />
               <img src="/assets/images/5.png" alt="photo" />
-            </div>
-            <div>
               <img src="/assets/images/6.png" alt="photo" />
               <img src="/assets/images/7.png" alt="photo" />
               <img src="/assets/images/8.png" alt="photo" />
