@@ -6,11 +6,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("images/bg-hero.png");
+    background: url("assets/images/bg-hero.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    // min-height: 100vh;
     // @media screen and (max-width: 600px) {
     //   background-position: 25% 0;
     // }
@@ -29,8 +29,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      padding: 18rem 0 12rem 0;
       gap: 1rem;
-      min-height: 100vh;
+      // min-height: 100vh;
       h1 {
         width: 80%;
         font-family: $ff-medium;
@@ -44,7 +45,7 @@
         }
       }
       &__search {
-        margin-top: 15px;
+        margin-top: 10px;
         width: 65%;
         position: relative;
         @media screen and (max-width: 640px) {
