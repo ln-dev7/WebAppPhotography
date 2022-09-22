@@ -12,7 +12,7 @@ function Home() {
               votre prochain projet créatif.
             </h1>
             <div className="hero-intro__search">
-              <img src="/images/search.svg" alt="serch" />
+              <img src="assets/images/search.svg" alt="serch" />
               <input type="text" placeholder="Que recherchez-vous ?" />
             </div>
             <div className="hero-intro__categorie">
