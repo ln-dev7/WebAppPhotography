@@ -17,7 +17,7 @@ export default function Footer() {
                 <li>Relations avec les investisseurs</li>
                 <li>Bons de réduction</li>
                 <button>
-                  <img src="assets/icons/9.svg" alt="icon" />
+                  <img src="/assets/images/world-black.svg" alt="icon" />
                   <span>Français</span>
                 </button>
               </ul>
@@ -54,11 +54,10 @@ export default function Footer() {
           <div class="footer-copy">
             <h3>© Copyright 2022-2023 Webflow</h3>
             <div>
-              <img src="assets/icons/29.svg" alt="icon" />
-              <img src="assets/icons/12.svg" alt="icon" />
-              <img src="assets/icons/35.svg" alt="icon" />
-              <img src="assets/icons/14.svg" alt="icon" />
-              <img src="assets/icons/13.svg" alt="icon" />
+              <img src="/assets/images/Github.svg" alt="logo-social" />
+              <img src="/assets/images/Telegram.svg" alt="logo-social" />
+              <img src="/assets/images/Vkontakte.svg" alt="logo-social" />
+              <img src="/assets/images/Twitter.svg" alt="logo-social" />
             </div>
           </div>
         </div>
