@@ -30,7 +30,9 @@ export default function Header() {
             <div className="xl">
               <div className="menu-header">
                 <div>
-                  <img src="/assets/images/logo-white.svg" alt="logo" />
+                  <Link to="/">
+                    <img src="/assets/images/logo-white.svg" alt="logo" />
+                  </Link>
                 </div>
                 <div onClick={toggleMenu}>
                   <img src="/assets/images/close-black.svg" alt="close" />
@@ -58,7 +60,9 @@ export default function Header() {
         )}
         <nav className="nav">
           <div className="xl">
-            <img src="/assets/images/logo-white.svg" alt="logo" />
+            <Link to="/">
+              <img src="/assets/images/logo-white.svg" alt="logo" />
+            </Link>
             <div className="nav-right">
               <div className="nav-right__lang">
                 <img src="/assets/images/world-white.svg" alt="world" />

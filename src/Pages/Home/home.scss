@@ -171,4 +171,31 @@
       }
     }
   }
+
+  .partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F9FAFB;
+    border-top: 1px solid #9FA6B2;
+    .xl {
+      position: relative;
+      width: 100%;
+      max-width: 1280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 1.5rem 1rem;
+
+      img{
+        filter: grayscale(1);
+        transition: .3s ease;
+        &:hover{
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
 }
