@@ -1,12 +1,26 @@
-import React from "react";
-import "./header.scss"
+import React, { useState, useEffect, useRef } from "react";
+import "./header.scss";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const isSearchBarShow = useRef();
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => {
+      window.scrollY > window.innerHeight
+        ? isSearchBarShow.current.classList.add("show")
+        : isSearchBarShow.current.classList.remove("show");
+    });
+  });
   return (
     <div className="header">
-      <div class="menu">
-        <div class="menu-header">
+      <div className="header-search" ref={isSearchBarShow}>
+        <div className="xl">
+          <img src="assets/search.svg" alt="serch" />
+          <input type="text" placeholder="Que recherchez-vous ?" />
+        </div>
+      </div>
+      <div className="menu">
+        <div className="menu-header">
           <div>
             <img src="assets/logo-white.svg" alt="logo" />
           </div>
@@ -14,7 +28,7 @@ export default function Header() {
             <img src="assets/close-black.svg" alt="close" />
           </div>
         </div>
-        <ul class="menu-items">
+        <ul className="menu-items">
           <li>Photos</li>
           <li>Videos</li>
           <li>Editeurs/agences</li>

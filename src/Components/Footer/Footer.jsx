@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div>
-      <div class="author">
+      <div className="author">
         <p>
           Designé par
           <a href="https://twitter.com/mbagnajohan"> Mbagna Johan </a> et codé par
