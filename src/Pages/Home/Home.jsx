@@ -21,8 +21,10 @@ function Home() {
               <button>particuliers</button>
               <button>portrait</button>
             </div>
+            <p className="hero-intro__artist">
+            Artiste :  Divine Effiong
+            </p>
           </div>
-          
         </div>
         <div class="hero-footer">
           <div class="xl">
