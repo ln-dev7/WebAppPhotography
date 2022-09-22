@@ -20,7 +20,7 @@ export default function Header() {
     <>
       <div className="header-search" ref={isSearchBarShow}>
         <div className="xl">
-          <img src="assets/search.svg" alt="serch" />
+          <img src="/assets/search.svg" alt="serch" />
           <input type="text" placeholder="Que recherchez-vous ?" />
         </div>
       </div>
@@ -30,10 +30,10 @@ export default function Header() {
             <div className="xl">
               <div className="menu-header">
                 <div>
-                  <img src="assets/logo-white.svg" alt="logo" />
+                  <img src="/assets/logo-white.svg" alt="logo" />
                 </div>
                 <div onClick={toggleMenu}>
-                  <img src="assets/close-black.svg" alt="close" />
+                  <img src="/assets/close-black.svg" alt="close" />
                 </div>
               </div>
               <ul className="menu-items">
@@ -58,16 +58,16 @@ export default function Header() {
         )}
         <nav className="nav">
           <div className="xl">
-            <img src="assets/logo-white.svg" alt="logo" />
+            <img src="/assets/logo-white.svg" alt="logo" />
             <div className="nav-right">
               <div className="nav-right__lang">
-                <img src="assets/world-white.svg" alt="world" />
+                <img src="/assets/world-white.svg" alt="world" />
                 <span>Français</span>
               </div>
               <div className="line"></div>
               <button type="button">Devenir créateur</button>
               <div onClick={toggleMenu}>
-                <img src="assets/menu.svg" alt="menu" />
+                <img src="/assets/menu.svg" alt="menu" />
                 <span>MENU</span>
               </div>
             </div>
