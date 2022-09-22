@@ -74,19 +74,16 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        flex-wrap: wrap;
         gap: 0.5rem;
         button {
           position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
           font-size: 14px;
-          background: $black;
+          background: transparent;
           border: 1px solid $white;
           color: $white;
           padding: 0.5rem;
           border-radius: 40px;
-          font-weight: 300;
           cursor: pointer;
           transition: 0.3s ease-in-out;
           &:hover,
