@@ -6,22 +6,23 @@ function Home() {
     <div className="home">
       <div class="hero">
         <div class="xl">
-          <div class="hero-text">
+          <div class="hero-intro">
             <h1>
               Trouvez l’image haute résolution parfaite pour enrichir
               votre prochain projet créatif.
             </h1>
-            <div>
+            <div className="hero-intro__search">
               <img src="assets/search.svg" alt="serch" />
               <input type="text" placeholder="Que recherchez-vous ?" />
             </div>
-            <div>
+            <div className="hero-intro__categorie">
               <button className="active">can21</button>
               <button>agences</button>
               <button>particuliers</button>
               <button>portrait</button>
             </div>
           </div>
+          
         </div>
         <div class="hero-footer">
           <div class="xl">
