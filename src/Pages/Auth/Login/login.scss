@@ -1,1 +1,103 @@
 @import '../../../index.scss';
+
+.login{
+    .container {
+        width: clamp(40%, 400px, 95%);
+      
+        h2 {
+          font-size: 36px;
+          font-weight: 700;
+          color: #252f3f;
+        }
+      
+        &-input {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 20px 0;
+      
+          label {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 5px;
+          }
+      
+          input {
+            width: 100%;
+            border: 1px solid #e5e7eb;
+            border-radius: 4px;
+            padding: 10px;
+            outline: none;
+      
+            &:focus {
+              border-color: #bcbec3;
+            }
+          }
+        }
+      
+        &-options {
+          margin: 10px 0 15px 0;
+          font-size: 14px;
+          font-weight: 500;
+          color: #252f3f;
+          text-align: right;
+        }
+      
+        &-error {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 10px 0;
+          padding: 5px 0;
+          border: 2px solid red;
+          border-radius: 5px;
+          background: rgba(red, 0.05);
+      
+          span {
+            font-size: 13px;
+            font-weight: 500;
+            color: red;
+            text-align: center;
+          }
+        }
+      
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: $black;
+          border: 1px solid $black;
+          border-radius: 4px;
+          padding: 10px;
+          width: 100%;
+          font-size: 16px;
+          font-weight: 500;
+          color: $white;
+          margin-top: 20px;
+          cursor: pointer;
+          transition: box-shadow 0.2s ease-in-out;
+      
+          &:hover {
+            box-shadow: 2px 2px 10px #dfdfdf;
+          }
+        }
+      
+        .button-google {
+          background: rgb($black, 0.05);
+          border-width: 2px;
+          border-color: transparent;
+          transition: 0.3s ease-in-out;
+      
+          span {
+            font-weight: 600;
+            margin-left: 10px;
+          }
+      
+          &:hover {
+            background: rgb($black, 0.075);
+            box-shadow: none;
+          }
+        }
+      }
+}

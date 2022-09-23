@@ -154,7 +154,10 @@
           }
         }
 
-        button {
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           background: $white;
           //font-family: $ff-light;
           color: $black;
@@ -252,6 +255,7 @@
           height: 100%;
           border-radius: 1rem;
           overflow: hidden;
+          transition: .3s ease;
           &:nth-child(1) {
             grid-area: a;
           }

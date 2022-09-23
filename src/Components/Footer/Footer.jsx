@@ -54,7 +54,7 @@ export default function Footer() {
           <div class="footer-copy">
             <h3>© Copyright 2022-2023 Webflow</h3>
             <div>
-              <img src="/assets/images/Github.svg" alt="logo-social" />
+              <img src="/assets/images/GitHub.svg" alt="logo-social" />
               <img src="/assets/images/Telegram.svg" alt="logo-social" />
               <img src="/assets/images/Vkontakte.svg" alt="logo-social" />
               <img src="/assets/images/Twitter.svg" alt="logo-social" />

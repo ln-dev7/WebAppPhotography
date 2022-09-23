@@ -16,7 +16,6 @@
     left: 0;
     right: 0;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     //position: relative;
     display: flex;
     justify-content: center;
@@ -102,7 +101,11 @@
         }
       }
 
-      button {
+      
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: transparent;
         color: $white;
         font-size: 1rem;
@@ -128,6 +131,10 @@
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .xl {
       position: relative;
@@ -219,7 +226,10 @@
           flex-direction: column;
         }
 
-        button {
+        a {
+          display: flex;
+          display: flex;
+          justify-content: center;
           background: $white;
           width: 290px;
           color: $black;

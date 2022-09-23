@@ -47,8 +47,8 @@ export default function Header() {
               </ul>
               <div className="menu-auth">
                 <div>
-                  <button>Se connecter</button>
-                  <button>Uploadez une photo</button>
+                  <Link to="/login">Se connecter</Link>
+                  <Link to="/">Uploadez une photo</Link>
                 </div>
                 <p>
                   Vous n’avez pas de compte ?{" "}
@@ -69,7 +69,7 @@ export default function Header() {
                 <span>Français</span>
               </div>
               <div className="line"></div>
-              <button type="button">Devenir créateur</button>
+              <Link to="/login">Devenir créateur</Link>
               <div onClick={toggleMenu}>
                 <img src="/assets/images/menu.svg" alt="menu" />
                 <span>MENU</span>
