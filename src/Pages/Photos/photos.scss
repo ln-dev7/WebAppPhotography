@@ -316,6 +316,43 @@
     }
   }
 
+  .infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .xl {
+      position: relative;
+      width: 100%;
+      max-width: 1280px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2.5rem 1rem;
+    }
+      h2 {
+        font-size: 1.7rem;
+        font-family: $ff-medium;
+        text-align: center;
+      }
+      p {
+        color: $gray;
+        font-size: 14px;
+        text-align: center;
+      }
+
+    button {
+      background: $black;
+      gap: 0.5rem;
+      border-radius: 12px;
+      padding: 10px;
+      border: 1px solid $black;
+      transition: 0.3s ease;
+      color: $white;
+    }
+  }
+
   .partner {
     display: flex;
     justify-content: center;

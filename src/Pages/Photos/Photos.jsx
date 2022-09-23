@@ -184,6 +184,13 @@ function Photos() {
             </Link>
           </div>
         </div>
+        <div className="infos">
+          <div className="xl">
+            <h2>Les plus grandes entreprises au monde nous font confiance pour trouver la photo et l’artiste de confiance qu’ils leur faut.</h2>
+            <p>Besoin d’une formule personnalisée pour votre entreprise ?</p>
+            <button>En savoir plus</button>
+          </div>
+        </div>
         <div className="partner">
           <div className="xl">
             <img src="/assets/images/spark-black.svg" alt="logo-partner" />
