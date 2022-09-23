@@ -7,6 +7,7 @@
     position: absolute;
     top: 15px;
     right: 15px;
+    z-index: 2;
   }
   &-left {
     width: 50%;
@@ -125,6 +126,9 @@
         justify-content: flex-start;
         gap: 0.5rem;
         margin-bottom: 0.75rem;
+        input{
+            flex-shrink: 0;
+        }
         h3 {
           display: flex;
           justify-content: center;

@@ -28,7 +28,7 @@ function Register() {
           <h2>Créer votre compte gratuit</h2>
           <h3 className="register-form-options">
             Vous avez déjà un compte ?
-            <Link to="/register"> connectez-vous.</Link>
+            <Link to="/login"> connectez-vous.</Link>
           </h3>
           <div className="register-form-socials">
             <h3>S’inscrire avec les réseaux sociaux</h3>
