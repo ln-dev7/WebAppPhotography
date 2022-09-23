@@ -184,6 +184,22 @@ function Photos() {
             </Link>
           </div>
         </div>
+        <div className="partner">
+          <div className="xl">
+            <img src="/assets/images/spark-black.svg" alt="logo-partner" />
+            <img src="/assets/images/didier-lefa.svg" alt="logo-partner" />
+            <img src="/assets/images/logo-3.svg" alt="logo-partner" />
+            <img src="/assets/images/ltf.svg" alt="logo-partner" />
+            <img src="/assets/images/logo-1.svg" alt="logo-partner" />
+            <img src="/assets/images/dark-code.svg" alt="logo-partner" />
+            <img src="/assets/images/tuple.svg" alt="logo-partner" />
+            <img src="/assets/images/logo-2.svg" alt="logo-partner" />
+            <img src="/assets/images/mirage.svg" alt="logo-partner" />
+            <img src="/assets/images/logo-5.svg" alt="logo-partner" />
+            <img src="/assets/images/statickit.svg" alt="logo-partner" />
+            <img src="/assets/images/logo-4.svg" alt="logo-partner" />
+          </div>
+        </div>
       </div>
     </>
   );
