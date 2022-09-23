@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
 import "./photos.scss";
+import { Link } from "react-router-dom";
 
 function Photos() {
   return (
@@ -24,6 +25,89 @@ function Photos() {
                 <button>portrait</button>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="categorie">
+          <div className="xl">
+            <div className="categorie-header">
+              <h2>Explorer une catégorie</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac
+                ultrices sit.
+              </p>
+            </div>
+            <div className="categorie-cards">
+              <div className="card">
+                <img src="/assets/images/22.png" alt="photo" />
+                <h3>Célébrités</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Harum, dicta?
+                </p>
+              </div>
+              <div className="card">
+                <img src="/assets/images/23.png" alt="photo" />
+                <h3>Faune et Flore</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Harum, dicta?
+                </p>
+              </div>
+              <div className="card">
+                <img src="/assets/images/24.png" alt="photo" />
+                <h3>Business | Finance</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Harum, dicta?
+                </p>
+              </div>
+              <div className="card">
+                <img src="/assets/images/25.png" alt="photo" />
+                <h3>Animaux | Faune sauvage</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Harum, dicta?
+                </p>
+              </div>
+              <div className="card">
+                <img src="/assets/images/26.png" alt="photo" />
+                <h3>Cosplay</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Harum, dicta?
+                </p>
+              </div>
+              <div className="card">
+                <img src="/assets/images/27.png" alt="photo" />
+                <h3>Sports</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Harum, dicta?
+                </p>
+              </div>
+              <div className="card">
+                <img src="/assets/images/28.png" alt="photo" />
+                <h3>Nourriture et boisson</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Harum, dicta?
+                </p>
+              </div>
+              <div className="card">
+                <img src="/assets/images/29.png" alt="photo" />
+                <h3>StreetArts</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Harum, dicta?
+                </p>
+              </div>
+            </div>
+            <Link to="/photos">
+              <button className="categorie-all">
+                <span>Tout afficher</span>
+                <img src="/assets/images/arrow-right.svg" alt="arrow" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
