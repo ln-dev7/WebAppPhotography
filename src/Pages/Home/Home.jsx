@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header/Header";
+import ModalPhoto from "../../Components/ModalPhoto/ModalPhoto";
 import "./home.scss";
 
 function Home() {
+  const [modalPhoto, setModalPhoto] = useState(false);
+  const showModalPhoto = () => {
+    setModalPhoto(!modalPhoto);
+  };
   return (
     <>
       <Header />
+      {modalPhoto && <ModalPhoto setModalPhoto={showModalPhoto} modalPhoto={modalPhoto} />}
       <div className="home">
         <div className="hero">
           <div className="xl">
@@ -25,7 +31,9 @@ function Home() {
                 <button>particuliers</button>
                 <button>portrait</button>
               </div>
-              <p className="hero-intro__artist">Artiste : Divine Effiong</p>
+              <p className="hero-intro__artist">
+                Artiste : Divine Effiong
+              </p>
             </div>
           </div>
           <div className="hero-footer">
@@ -62,18 +70,66 @@ function Home() {
             </div>
             <div className="archives-photos">
               <div>
-                <img src="/assets/images/1.png" alt="photo" />
-                <img src="/assets/images/2.png" alt="photo" />
-                <img src="/assets/images/3.png" alt="photo" />
-                <img src="/assets/images/4.png" alt="photo" />
-                <img src="/assets/images/5.png" alt="photo" />
-                <img src="/assets/images/6.png" alt="photo" />
-                <img src="/assets/images/7.png" alt="photo" />
-                <img src="/assets/images/8.png" alt="photo" />
-                <img src="/assets/images/9.png" alt="photo" />
-                <img src="/assets/images/10.png" alt="photo" />
-                <img src="/assets/images/11.png" alt="photo" />
-                <img src="/assets/images/12.png" alt="photo" />
+                <img
+                  onClick={showModalPhoto}
+                  src="/assets/images/1.png"
+                  alt="photo"
+                />
+                <img
+                  onClick={showModalPhoto}
+                  src="/assets/images/2.png"
+                  alt="photo"
+                />
+                <img
+                  onClick={showModalPhoto}
+                  src="/assets/images/3.png"
+                  alt="photo"
+                />
+                <img
+                  onClick={showModalPhoto}
+                  src="/assets/images/4.png"
+                  alt="photo"
+                />
+                <img
+                  onClick={showModalPhoto}
+                  src="/assets/images/5.png"
+                  alt="photo"
+                />
+                <img
+                  onClick={showModalPhoto}
+                  src="/assets/images/6.png"
+                  alt="photo"
+                />
+                <img
+                  onClick={showModalPhoto}
+                  src="/assets/images/7.png"
+                  alt="photo"
+                />
+                <img
+                  onClick={showModalPhoto}
+                  src="/assets/images/8.png"
+                  alt="photo"
+                />
+                <img
+                  onClick={showModalPhoto}
+                  src="/assets/images/9.png"
+                  alt="photo"
+                />
+                <img
+                  onClick={showModalPhoto}
+                  src="/assets/images/10.png"
+                  alt="photo"
+                />
+                <img
+                  onClick={showModalPhoto}
+                  src="/assets/images/11.png"
+                  alt="photo"
+                />
+                <img
+                  onClick={showModalPhoto}
+                  src="/assets/images/12.png"
+                  alt="photo"
+                />
               </div>
             </div>
             <Link to="/photos">
