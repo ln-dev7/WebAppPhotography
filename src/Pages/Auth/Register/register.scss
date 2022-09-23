@@ -1,1 +1,158 @@
-@import '../../../index.scss';
+@import "../../../index.scss";
+
+.register {
+  display: flex;
+  position: relative;
+  &-logo {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  &-left {
+    width: 50%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+
+    &__image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    h2 {
+      width: 80%;
+      color: $white;
+      font-family: $ff-medium;
+      font-size: 1.5rem;
+      z-index: 2;
+    }
+  }
+  &-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // align-items: flex-start;
+    // margin-left: 4rem;
+    width: 50%;
+    height: 100%;
+    padding: 8rem 0;
+
+    @media screen and (max-width: 960px) {
+      width: 100%;
+      align-items: center;
+    }
+
+    .register-form {
+      width: 500px;
+      max-width: 95%;
+
+      h2 {
+        font-size: 36px;
+        margin-bottom: 5px;
+        font-family: $ff-medium;
+      }
+
+      h3 {
+        a {
+          font-family: $ff-medium;
+        }
+      }
+
+      &-input {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 0;
+
+        label {
+          font-size: 14px;
+          margin-bottom: 5px;
+          font-family: $ff-medium;
+        }
+
+        input, select {
+          width: 100%;
+          border: 1px solid #e5e7eb;
+          color: #bcbec3;
+          border-radius: 8px;
+          padding: 10px;
+          outline: none;
+
+          &::placeholder {
+            color: #bcbec3;
+          }
+
+          &:focus {
+            border-color: #bcbec3;
+          }
+        }
+      }
+
+      .input-duo {
+        display: flex;
+        gap: 1rem;
+        div{
+            width: 100%;
+            margin: 0;
+        }
+      }
+
+      &-socials{
+        margin-top: 1rem;
+        h3{
+            font-family: $ff-medium;
+            margin-bottom: 5px;
+        }
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1rem;
+        }
+      }
+
+      &-footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+        h3 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          span {
+            color: $gray;
+            span {
+              color: $black;
+              font-family: $ff-medium;
+            }
+          }
+        }
+      }
+
+      &-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $black;
+        border: 1px solid $black;
+        border-radius: 8px;
+        padding: 10px;
+        width: 100%;
+        font-size: 16px;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+}

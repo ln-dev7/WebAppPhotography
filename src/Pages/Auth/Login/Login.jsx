@@ -27,14 +27,14 @@ function Login() {
           <h2>Se connecter</h2>
           <h3 className="login-form-options">
             Vous n'avez pas de compte ?
-            <Link to="/register"> Inscrivez vous</Link>
+            <Link to="/register"> Créer un compte.</Link>
           </h3>
           <div className="login-form-input">
             <label htmlFor="email">Email *</label>
             <input
               id="email"
               type="email"
-              placeholder="Entrez votre adresse email"
+              placeholder="Votre adresse email"
               required
             />
           </div>
@@ -43,7 +43,7 @@ function Login() {
             <input
               id="password"
               type="password"
-              placeholder="Entrez votre mot de passe"
+              placeholder="Votre mot de passe"
               required
             />
           </div>
