@@ -5,65 +5,75 @@ import { Link } from "react-router-dom";
 function Login() {
   return (
     <div className="login">
-      <div className="login-image">
-        <Link to="/">
-          <img src="/assets/images/logo-white.svg" alt="logo" />
+      <Link to="/">
+          <img
+            className="login-logo"
+            src="/assets/images/logo-black.svg"
+            alt="logo"
+          />
         </Link>
+      <div className="login-left">
         <h2>
           Accédez à des fonctionnalités exclusives en créant un compte gratuit.
         </h2>
-        <img src="/assets/images/bg-login.png" alt="photo" />
+        <img
+          className="login-left__image"
+          src="/assets/images/bg-login.png"
+          alt="photo"
+        />
       </div>
-      <form className="container">
-        <h2>Connectez vous</h2>
-        <h3 className="container-options">
-          Pas encore un compte ?
-          <router-link to="/register">Inscrivez vous</router-link>
-        </h3>
-        <div className="container-input">
-          <label htmlFor="email">Emeil *</label>
-          <input
-            v-model="email"
-            id="email"
-            type="email"
-            placeholder="Entrez votre adresse email"
-            required
-          />
-        </div>
-        <div className="container-input">
-          <label htmlFor="password">Mot de passe *</label>
-          <input
-            v-model="password"
-            id="password"
-            type="password"
-            placeholder="Entrez votre mot de passe"
-            required
-          />
-        </div>
-        <h3>
-          <input type="checkbox" />
-          Se souvenir de moi
-        </h3>
-        <h3>Mot de passe oublié ?</h3>
-        <button type="submit" className="container-button" v-if="!isLoading">
-          Se connecter
-        </button>
-        <h4>Ou continuer avec</h4>
-        <div className="container-socials">
-          <button>
-            <img src="/assets/images/google.svg" alt="google" />
-            <span>Continuer avec Google</span>
+      <div className="login-right">
+        <form className="login-form">
+          <h2>Se connecter</h2>
+          <h3 className="login-form-options">
+            Vous n'avez pas de compte ?
+            <Link to="/register"> Inscrivez vous</Link>
+          </h3>
+          <div className="login-form-input">
+            <label htmlFor="email">Email *</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Entrez votre adresse email"
+              required
+            />
+          </div>
+          <div className="login-form-input">
+            <label htmlFor="password">Mot de passe *</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Entrez votre mot de passe"
+              required
+            />
+          </div>
+          <div className="login-form-footer">
+            <h3>
+              <input type="checkbox" />
+              Se souvenir de moi
+            </h3>
+            <h3>Mot de passe oublié ?</h3>
+          </div>
+          <button type="submit" className="login-form-button">
+            Se connecter
           </button>
-          <button>
-            <img src="/assets/images/facebook.svg" alt="facebook" />
-            <span>Continuer avec Facebook</span>
-          </button>
-          <button>
-            <img src="/assets/images/twitter-blue.svg" alt="twitter" />
-            <span>Continuer avec Twitter</span>
-          </button>
-        </div>
-      </form>
+          <h4>Ou continuer avec</h4>
+          <div className="login-form-socials">
+            <button>
+              <img src="/assets/images/google.svg" alt="google" />
+              <span>Continuer avec Google</span>
+            </button>
+            <button>
+              <img src="/assets/images/facebook.svg" alt="facebook" />
+              <span>Continuer avec Facebook</span>
+            </button>
+            <button>
+              <img src="/assets/images/twitter-blue.svg" alt="twitter" />
+              <span>Continuer avec Twitter</span>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
