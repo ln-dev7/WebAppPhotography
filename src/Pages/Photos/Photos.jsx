@@ -110,6 +110,80 @@ function Photos() {
             </Link>
           </div>
         </div>
+        <div className="artist">
+          <div className="xl">
+            <div className="artist-header">
+              <h2>Les artistes comptent</h2>
+              <p>
+                Découvrez les comptes des 03 meilleurs artistes les plus en vus
+                de ce mois sur la plateforme
+              </p>
+            </div>
+            <div className="artist-cards">
+              <div className="card">
+                <img
+                  className="card-bg"
+                  src="/assets/images/30.png"
+                  alt="photo"
+                />
+                <div className="card-content">
+                  <img
+                    className="card-img"
+                    src="/assets/images/30.png"
+                    alt="photo"
+                  />
+                  <div>
+                    <h5>XTincel</h5>
+                    <p>Disponible pour collaboration</p>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <img
+                  className="card-bg"
+                  src="/assets/images/31.png"
+                  alt="photo"
+                />
+                <div className="card-content">
+                  <img
+                    className="card-img"
+                    src="/assets/images/31.png"
+                    alt="photo"
+                  />
+                  <div>
+                    <h5>The Student Photographer 📸</h5>
+                    <p>Disponible pour collaboration</p>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <img
+                  className="card-bg"
+                  src="/assets/images/32.png"
+                  alt="photo"
+                />
+                <div className="card-content">
+                  {" "}
+                  <img
+                    className="card-img"
+                    src="/assets/images/32.png"
+                    alt="photo"
+                  />
+                  <div>
+                    <h5>DidierLefa📸</h5>
+                    <p>Disponible pour collaboration</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Link to="/photos">
+              <button className="artist-all">
+                <span>Tout afficher</span>
+                <img src="/assets/images/arrow-right.svg" alt="arrow" />
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );
